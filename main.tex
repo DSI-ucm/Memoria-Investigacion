@@ -1,0 +1,66 @@
+% \documentclass[12pt,twoside,open=right]{report}
+\documentclass[12pt,twoside,open=right]{scrreprt}
+\usepackage[a4paper,margin=1in,headheight=14pt]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[toc,page]{appendix} % Remove toc,page to render wo appendix
+\usepackage[automark,headsepline]{scrlayer-scrpage} % Cabeceras y pies
+
+\title{Por Decidir}
+\author{Grupo 4}
+\newcommand{\authorfull}{
+    Celso Antonio García Pinedo \\
+    Daniel Alfaro Miranda \\
+    David Davó Laviña \\
+    Guillermo Ovejero Sánchez \\
+    Luis Oswaldo Montenegro Julón \\
+    Pablo Fernández Jara \\
+    Pablo Aguilera Heredero \\
+    Pablo Javier del Pino Sánchez \\
+    Pedro Martínez Gamero
+}
+\date{\today}
+
+\renewcommand\labelitemi{--} % Me gusta más que los puntos
+
+\clearpairofpagestyles
+\makeatletter
+\cfoot[--- \pagemark ---]{--- \pagemark ---}
+\rohead{\@author}
+\makeatother
+\pagestyle{scrheadings}
+
+\begin{document}
+\begin{titlepage}
+\makeatletter
+{
+\centering
+\vspace*{4cm}
+{\fontsize{40pt}{40pt}\bfseries\scshape\@title\par}
+{\rule{0.5\textwidth}{1pt}\par}
+
+
+{\Huge Memoria de Investigación\par}
+
+\vspace*{1cm}
+{\Large\textbf{\@author :}  \par}
+{\large\itshape 
+\authorfull
+\par}
+}
+\vfill
+\makeatother
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\input{sections/01plan-de-investigacion}
+\input{sections/02planificacion-temporal}
+\input{sections/03resultados-usuario}
+\input{sections/04analisis-de-competencia}
+\input{sections/05lista-de-factoides}
+\input{sections/06conclusiones}
+
+
+\end{document}
