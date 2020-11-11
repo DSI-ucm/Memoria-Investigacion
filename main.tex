@@ -1,17 +1,28 @@
-% \documentclass[12pt,twoside,open=right]{report}
-\documentclass[12pt,twoside,open=right]{scrreprt}
+% \documentclass[12pt,twoside,open=right]{scrreprt}
+\documentclass[12pt]{scrreprt}
 \usepackage[a4paper,margin=1in,headheight=14pt]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[toc,page]{appendix} % Remove toc,page to render wo appendix
 \usepackage[automark,headsepline]{scrlayer-scrpage} % Cabeceras y pies
+\usepackage{amssymb}
+\usepackage{hyperref}
 \usepackage{wrapfig}
 \usepackage{graphicx}
 \usepackage[table]{xcolor}
 \usepackage{pifont}
 \usepackage{booktabs}
+\usepackage{threeparttable}
 
-\title{Por Decidir}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+\newcommand\productname{Nombre Por Decidir}
+
+\title{\productname}
 \author{Grupo 4}
 \newcommand{\authorfull}{
     Celso Antonio García Pinedo \\
@@ -26,14 +37,16 @@
 }
 \date{\today}
 
+\setlength\parindent{0pt}
 \renewcommand\labelitemi{--} % Me gusta más que los puntos
 \newcommand{\cmark}{\ding{51}}
 \newcommand{\xmark}{\ding{55}}
+\newcommand{\zmark}{$\thicksim$}
 
-\clearpairofpagestyles
 \makeatletter
 \cfoot[--- \pagemark ---]{--- \pagemark ---}
-\rohead{\@author}
+\ohead{\rightmark}
+\chead{\@title}
 \makeatother
 \pagestyle{scrheadings}
 
