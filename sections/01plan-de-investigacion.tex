@@ -12,7 +12,7 @@ Tener una aplicación con la que manejar una de las partes de esas tareas con ma
 \section{Selección de los usuarios}
 Hemos identificado los siguientes tipos de usuarios:
 \begin{itemize}
-    \item \textbf{Persona que vive sola}: Le es fácil acordarse de todo lo que tiene y no necesita asignar compras a nadie, pero le viene bien usar una aplicación de este estilo para que no se le olvide nada al ir a hacer la compra.
+    \item \textbf{Persona que vive sola}: Le es fácil acordarse de todo lo que tiene y no necesita asignar tareas a nadie, pero le viene bien usar una aplicación de este estilo para que no se le olvide nada al ir a hacer la compra.
     \item \textbf{Piso compartido}: La repartición de tareas es algo clave para este grupo de usuarios entre los que suele haber poca comunicación. Pueden notificar cuando se ha agotado algo para que otro compañero lo compre de camino a casa, o dividir los gastos al ver qué cosas ha comprado cada uno.
     \item \textbf{Familia}: Aunque la comunicación dentro de este grupo suele ser mejor, tener una aplicación enfocada a esto puede permitir saber en todo momento el consumo de determinados productos, e incluso incentivar el ahorro. También elimina la carga de tener que ser consciente en todo momento de todos los productos en la nevera y sus fechas de caducidad.
 \end{itemize}
@@ -26,25 +26,80 @@ Podrán realizarse siguiendo los siguientes formatos:
 \begin{itemize}
     \item Audio, grabado en persona o por llamada
     \item Vídeo, ya sea en persona o por videoconferencia
-    \item Email
-    \item Transcribiendo las respuestas a papel
+    \item Email u otros medios de comunicación escrita
 \end{itemize}
 
+Se puede encontrar una transcripción de las entrevistas realizadas en el anexo~\ref{ch:entrevistas}.
+
+Antes de realizar la entrevista se informará al entrevistado sobre el motivo por el que se realiza la entrevista, y se hará constar que la entrevista será grabada. Posteriormente se le hará firmar al usuario el modelo de consentimiento para la grabación, que podemos encontrar en el anexo~\ref{ch:consentimiento}.
+Se hará una pequeña batería de preguntas a modo de screener, para conocer al usuario, antes de proceder a la batería de preguntas relacionadas directamente con la aplicación.
+
+\subsection{Relación de personas entrevistadas}
+\begin{table}[h]
+    \centering\small
+    \begin{threeparttable}
+    \rowcolors{2}{black!15}{}
+    \begin{tabularx}{.9\textwidth}{@{}Xcccc@{}}
+    \rowcolor{red!20}
+    \textbf{Nombre} & \textbf{Grupo} & \textbf{Fecha} & \textbf{Lugar} & \textbf{Formato} \\
+    \toprule
+    Menganito de los Santos Discépolo & Vive solo & 1970-01-01 & Taured & Telepatía \\
+    Leidy Vanesa Vidales & Piso compartido & 2020-11-10 & Madrid & En persona
+    \end{tabularx}
+    \end{threeparttable}
+\end{table}
+
+\subsection{Preguntas de la entrevista}
+\subsubsection{Screener}
 A continuación, se proponen unas preguntas a modo de Screener para conocer a los entrevistados y determinar en qué grupo de usuarios clasificarlos:
 
 \begin{itemize}
-    \item \textbf{¿Cuál es su edad?}
-    \item \textbf{¿Convive con más gente en su hogar? ¿Cuál es su relación con ellos?}
-    \item \textbf{¿Tiene un smartphone o Tablet? ¿Es Android o iOS?}
-    \item \textbf{¿Utiliza algún medio para anotar los productos que necesite comprar? ¿Cual?}
-     \item \textbf{...}
+    \item ¿Cuál es su edad?
+    \item ¿Convive con más gente en su hogar? ¿Cuál es su relación con ellos?
+    \item ¿Tiene un smartphone o Tablet? ¿Es Android o iOS?
+    \item ¿Utiliza algún medio para anotar los productos que necesite comprar? ¿Cual?
+    \item Si no utiliza ningún medio, ¿Suele olvidarse de artículos que necesita comprar?
+    \item ¿Su móvil es de gama baja, media o alta?
 \end{itemize}
 
-ToDo:
-\begin{itemize}
-    \item Introducción a la entrevista
-    \item Consentimiento para grabar
-    \item Guiones de las entrevistas (posiblemente varios modelos)
-\end{itemize}
+\subsubsection{Batería de preguntas comunes}
+
+\begin{enumerate}
+%Objetivos
+%Sistema
+%Flujos de trabajo
+%Actitudes
+    \item ¿Con que frecuencia haces la compra? (diaria, semanal, mensual)
+    \item ¿Sueles comprar por internet? (Amazon Now, Carrefour Online, etc)
+    \item Si sueles comprar por internet, ¿Vas a recogerlo a tienda o pides envío?
+    \item Si vas a comprar al sitio, ¿Lo traes inmediatamente de vuelta (coche, en mano, transporte publico), o pides que te lo envíen?
+    \item ¿Pierdes mucho tiempo yendo a comprar, cuanto tiempo?
+    \item ¿Qué es lo que te hace perder el tiempo? ¿Buscar las cosas? ¿El transporte al sitio? ¿la caja?
+    \item ¿Sabes que es lo que tienes que comprar para la casa, o que es lo que hace falta? ¿Como lo recuerdas?
+    \item ¿Sabes que tipos de productos suele haber en tu casa con regularidad?
+    \item ¿Sabes en que lugares tienen los productos que necesitas?
+    \item ¿Sueles comprar mas económico, o por calidad del producto?
+    \item ¿Cuando vas a comprar, si no sabes con exactitud que producto escoger preguntas a alguien? (otros residentes de casa, trabajadores del super)
+    \item ¿Que partes del proceso de hacer la compra odias mas? ¿Cuales prefieres hacer? ¿Por qué? (comprar, organizar la compra, realizar el listado, etc.)
+    \item ¿Cuando vas a comprar usas alguna app para buscar información del producto que compras? (valores nutricionales, precio, valoraciones, etc). Si es así, ¿cuales utilizas?
+    \item ¿Sueles comprar cosas innecesarias?
+    % \item ¿Suele gastar mas de lo debido al no llevar un registro de lo que compra?
+    \item ¿Suele tener mas de una lista de la compra? (Por ej. Lista de alimentos, lista de drogueria, etc) 
+    \item ¿Suele tener listas de la compra compartidas con diferentes grupos de personas? (por ej. lista de casa, lista para una fiesta, lista para cosas del trabajo, etc)
+\end{enumerate}
+
+\subsubsection{Preguntas para familia}
+\begin{enumerate}
+    \item ¿Haces todo el proceso solo/a? ¿Te ayuda alguien en alguna parte del proceso? ¿Quien?
+    \item A la hora de organizar, ¿sabes donde va cada producto?
+\end{enumerate}
+
+\subsubsection{Preguntas para piso compartido}
+\begin{enumerate}
+    \item ¿Como os organizáis las tareas relativas a la compra en su piso?
+    \item ¿Has tenido problemas de convivencia por la falta de comunicación en las tareas a realizar?
+\end{enumerate}
 
 \section{Otros tipos de técnicas utilizadas para la elaboración del estudio}
+
+Se ha realizado un cuestionario online mediante Google Forms debido a su fácil propagación y que no es necesario un acuerdo previo al ser respuestas anónimas. Pueden verse las preguntas y resultados del cuestionario en el anexo~\ref{ch:forms}

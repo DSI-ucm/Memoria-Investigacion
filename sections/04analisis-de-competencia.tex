@@ -38,22 +38,36 @@ Esta simple aplicación cumple su función. \href{https://play.google.com/store/
 Se trata de una simple aplicación de notas con múltiples funcionalidades que hacen que pueda servir para cualquier cosa. Aun así, al ser una simple aplicación de notas, no podemos asignar nada por cada ítem: las propiedades de notificación, categoría, foto, etc. son siempre aplicadas a toda una lista.
 
 \subsection{Listonic}
-Lista de la compra multiplataforma con multitud de funcionalidades, enfocado en compartirlas con grupos de personas. También es destacable que da diversos consejos sobre compras, ahorro, salud y comidas que hacer con los productos comprados. Automáticamente nos calcula el precio de la compra, pero no hay dispobible funcionalidades para gestionar los alimentos de los que dispones en casa.
+\begin{wrapfigure}[4]{l}{2cm}
+\vspace{-.5cm}
+\includegraphics[width=1.8cm]{images/listonic.png}
+\end{wrapfigure}
+Lista de la compra multiplataforma con multitud de funcionalidades, enfocado en compartirlas con grupos de personas. También es destacable que da diversos consejos sobre compras, ahorro, salud y comidas que hacer con los productos comprados, además de ofrecer tickets descuento de varias compañías. Automáticamente nos calcula el precio de la compra, pero no hay disponible funcionalidades para gestionar los alimentos de los que dispones en casa.
 
-\subsection{Out of Milk}
+\subsection{Bring}
+\begin{wrapfigure}[4]{l}{2cm}
+\vspace{-.5cm}
+\includegraphics[width=1.8cm]{images/bring.png}
+\end{wrapfigure}
+Bring está mucho más enfocada a las funcionalidades sociales, puedes tener varias listas, y una foto que identifique la lista del resto. 
+
+Además, puedes saber quien ha añadido un elemento a la lista. Permite enviar mensajes rápidos entre las personas de la lista como «¡Me voy de compras: última oportunidad para añadir cosas a la lista!» o «Compras realizadas». Se sincroniza en tiempo real, por lo que también se puede usar para hacer la compra más rápido entre 2 personas. 
+
+Cuenta con interfaz de voz con el Asistente de Google y Alexa, además de interfaz de Android Wear, no es necesario tan si quiera sacar el móvil mientras estás comprando o si te acuerdas de que hay que comprar algo mientras estás cocinando. 
 
 \section{Tablas de aplicaciones y funcionalidades}
 \begin{table}[h]
     \centering
     \begin{threeparttable}
     \rowcolors{3}{white}{black!15}
-    \begin{tabular}{@{}rccccccccccccc@{}}
+    \begin{tabular}{@{}rcccccccccccccc@{}}
     \textbf{Aplicación} & 
     \rotatebox{90}{\textbf{Despensa}} &
     \rotatebox{90}{\textbf{Lista de Compra}} &
     \rotatebox{90}{\textbf{Notificaciones}} &
     \rotatebox{90}{\textbf{Caducidad}} &
     \rotatebox{90}{\textbf{Compartir listas}} & 
+    \rotatebox{90}{\textbf{Comunicación}} &
     \rotatebox{90}{\textbf{Fotos}} & 
     \rotatebox{90}{\textbf{Precios}} &
     \rotatebox{90}{\textbf{Ubicación}} &
@@ -64,25 +78,22 @@ Lista de la compra multiplataforma con multitud de funcionalidades, enfocado en 
     \rotatebox{90}{\textbf{Voz}} \\
     \toprule
     \rowcolor{green!30}
-    \productname         &&&&&&&&&&&&& \\
+    \productname         & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & ? & \cmark & \cmark & ? & ? & ? & ? \\
     \midrule
-    My Kitchen           & \cmark & \cmark & \cmark & \cmark & \cmark & \zmark\tnote{1} & \xmark & \cmark & \xmark & \cmark & ? & \xmark & \xmark \\
-    Best Before          & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark & \cmark & ? & \xmark & \xmark  \\
-    Reeking              & \cmark  \\
-    App4                 &&&&&&&&&&&&& \\
+    My Kitchen           & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \zmark\tnote{1} & \xmark & \cmark & \xmark & \cmark & \xmark & \xmark & \xmark \\
+    Best Before          & \cmark & \cmark & \cmark & \cmark & \xmark & \xmark & \cmark & \cmark & \cmark & \cmark & \cmark & \xmark & \xmark & \xmark  \\
+    Food Checklist       & \cmark & \cmark & \cmark & \cmark & \cmark\tnote{2} & \xmark & \cmark\tnote{2} & \cmark & \cmark & \cmark & \cmark & \xmark & \xmark & \xmark \\
     \midrule
-    Google Keep & \zmark & \zmark & \cmark & \xmark & \cmark & \zmark\tnote{3} & \xmark & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\
-    Listonic             &&&&&&&&&&&&& \\
-    Out of Milk          &&&&&&&&&&&&& \\
-    App 8                &&&&&&&&&&&&& \\
+    Google Keep          & \zmark & \zmark & \cmark & \xmark & \cmark & \xmark & \zmark\tnote{3} & \xmark & \xmark & \xmark & \xmark & \xmark & \xmark & \cmark \\
+    Listonic             & \xmark & \cmark & \xmark & \xmark & \cmark & \xmark & \cmark & \cmark & \xmark & \cmark & \xmark & \xmark & \xmark & \xmark \\
+    Out of Milk          & \xmark & \cmark & \cmark & \xmark & \cmark & \cmark & \cmark & \cmark & \xmark & \cmark & \xmark & \xmark & \xmark & \cmark \\
     \bottomrule
     \end{tabular}
     \begin{tablenotes}
     \footnotesize
     \item[1] Sólo en Ecosia (no se pueden subir fotos propias)
-    \item[2] Sólo una foto por nota (lista)
+    \item[2] Sólo versión premium
+    \item[3] Sólo una foto por nota (lista)
     \end{tablenotes}
     \end{threeparttable}
 \end{table}
-
-Podemos observar que una funcionalidad con la que nuestros competidores no cuentan, es con la de poder escanear directamente el producto y no el código de barras, aunque sea técnicamente posible. (Google Lens, por ejemplo, es capaz de decirte el producto con una foto suya).

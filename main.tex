@@ -1,17 +1,19 @@
-% \documentclass[12pt,twoside,open=right]{scrreprt}
-\documentclass[12pt]{scrreprt}
-\usepackage[a4paper,margin=1in,headheight=14pt]{geometry}
+% \documentclass[14pt,twoside,open=right]{scrreprt}
+\documentclass[14pt]{scrreprt}
+\usepackage[a4paper,margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage[toc,page]{appendix} % Remove toc,page to render wo appendix
 \usepackage[automark,headsepline]{scrlayer-scrpage} % Cabeceras y pies
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{enumitem}
 \usepackage{wrapfig}
 \usepackage{graphicx}
-\usepackage[table]{xcolor}
+\usepackage[table,dvipsnames]{xcolor}
 \usepackage{pifont}
 \usepackage{booktabs}
+\usepackage{tabularx}
 \usepackage{threeparttable}
 
 \hypersetup{
@@ -20,7 +22,17 @@
     urlcolor=blue
 }
 
-\newcommand\productname{Nombre Por Decidir}
+\setlist[description]{
+  labelsep=0pt,
+  labelwidth=\transcriptlen,
+  leftmargin=\transcriptlen,
+}
+
+\newlength{\transcriptlen}
+\settowidth{\transcriptlen}{Entrevistador}
+\addtolength{\transcriptlen}{1cm}
+
+\newcommand\productname{DespensApp}
 
 \title{\productname}
 \author{Grupo 4}
@@ -39,14 +51,19 @@
 
 \setlength\parindent{0pt}
 \renewcommand\labelitemi{--} % Me gusta más que los puntos
-\newcommand{\cmark}{\ding{51}}
-\newcommand{\xmark}{\ding{55}}
+\newcommand{\cmark}{{\color{OliveGreen}\ding{51}}}
+\newcommand{\xmark}{{\color{red}\ding{55}}}
 \newcommand{\zmark}{$\thicksim$}
+\newcommand{\preg}{\item[Entrevistador:]}
+\newcommand{\resp}{\item[Entrevistado:]}
+
+\newcommand{\setresp}[1]{\renewcommand{\resp}{\item[#1:]{\settowidth{\transcriptlen}{#1}}}}
 
 \makeatletter
 \cfoot[--- \pagemark ---]{--- \pagemark ---}
 \ohead{\rightmark}
-\chead{\@title}
+\chead{}
+\ihead{\@title}
 \makeatother
 \pagestyle{scrheadings}
 
@@ -73,14 +90,16 @@
 \end{titlepage}
 
 \tableofcontents
-\newpage
 
 \input{sections/01plan-de-investigacion}
-\input{sections/02planificacion-temporal}
+% \input{sections/02planificacion-temporal}
 \input{sections/03resultados-usuario}
 \input{sections/04analisis-de-competencia}
 \input{sections/05lista-de-factoides}
 \input{sections/06conclusiones}
-
+\appendix
+\input{sections/anexos/consentimiento}
+\input{sections/anexos/transcripciones}
+\input{sections/anexos/forms}
 
 \end{document}
